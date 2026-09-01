@@ -20,6 +20,7 @@ const MONOGRAM = "/manus-storage/omar-monogram_22967487.png";
 const TOOLS = "/manus-storage/omar-tools-detail_2871489e.png";
 const CHAIR = "/manus-storage/omar-chair-detail_95da7558.png";
 const WINDOW = "/manus-storage/omar-window-light_2a86ce32.png";
+const TRANSFORMATION = "/manus-storage/CrazyTransformation.......#fyp#foryou#foryoupage#explore#houston#houstonbarber#barber#ba_76769eeb.mp4";
 
 const mapsUrl = "https://www.google.com/maps/dir/?api=1&destination=7710+Bellaire+Blvd+%23+I,+Houston,+TX+77036";
 const phone = "+17134808254";
@@ -136,6 +137,23 @@ export default function Home() {
           </div>
         </section>
 
+        <section className="work-section" id="work">
+          <div className="work-copy">
+            <div className="section-rail"><span>03</span><span className="rail-line" /><span>THE WORK</span></div>
+            <p className="eyebrow">Watch the transformation</p>
+            <h2>Details make<br /><em>the difference.</em></h2>
+            <p className="body-large">A real before-and-after from the chair, from bulk removal and fade work to crisp edging, razor detail, and the finished style.</p>
+            <div className="work-points"><span><Check size={14} /> Clippers to scissors</span><span><Check size={14} /> Straight-razor finish</span><span><Check size={14} /> Styled for the reveal</span></div>
+          </div>
+          <div className="work-video-frame">
+            <video className="work-video" autoPlay muted loop playsInline controls preload="metadata" poster={HERO} aria-label="Haircut transformation showing the barber's process and finished cut">
+              <source src={TRANSFORMATION} type="video/mp4" />
+              Your browser does not support video playback.
+            </video>
+            <div className="work-video-label"><span>REAL WORK</span><span>28 SEC · SOUND OFF</span></div>
+          </div>
+        </section>
+
         <section className="quote-section">
           <div className="quote-mark">“</div>
           <div className="quote-copy">
@@ -157,7 +175,7 @@ export default function Home() {
         <section className="visit-section" id="visit">
           <div className="visit-image-wrap"><img src={WINDOW} alt="Warm light inside a neighborhood barbershop in Houston" className="visit-image" /></div>
           <div className="visit-content">
-            <div className="section-rail"><span>03</span><span className="rail-line" /><span>THE VISIT</span></div>
+            <div className="section-rail"><span>04</span><span className="rail-line" /><span>THE VISIT</span></div>
             <p className="eyebrow">Pull up a chair</p>
             <h2>Find us<br /><em>in Houston.</em></h2>
             <div className="visit-details">
