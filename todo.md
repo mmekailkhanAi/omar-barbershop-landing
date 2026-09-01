@@ -5,4 +5,6 @@
 - [x] Write a fresh Veo interior-tour prompt with a controlled cinematic camera path.
 - [x] Define placement, autoplay, poster, mobile, and reduced-motion behavior for three videos.
 - [x] Integrate the supplied transformation clip into the landing page as a dedicated work showcase section.
+- [x] Inspect and add the second supplied haircut-work video as a separate showcase card.
+- [x] Re-check multi-video layout and responsive playback behavior.
 - [x] Re-run desktop/mobile visual verification after video integration.

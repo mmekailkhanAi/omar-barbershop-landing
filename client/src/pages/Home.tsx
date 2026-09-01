@@ -21,6 +21,7 @@ const TOOLS = "/manus-storage/omar-tools-detail_2871489e.png";
 const CHAIR = "/manus-storage/omar-chair-detail_95da7558.png";
 const WINDOW = "/manus-storage/omar-window-light_2a86ce32.png";
 const TRANSFORMATION = "/manus-storage/CrazyTransformation.......#fyp#foryou#foryoupage#explore#houston#houstonbarber#barber#ba_76769eeb.mp4";
+const DROP_FADE = "/manus-storage/CleanDropFade......#barber#explore#explorepage#fade#dropfade#houstonbarber#fades#haircu_625b2ec8.mp4";
 
 const mapsUrl = "https://www.google.com/maps/dir/?api=1&destination=7710+Bellaire+Blvd+%23+I,+Houston,+TX+77036";
 const phone = "+17134808254";
@@ -145,12 +146,21 @@ export default function Home() {
             <p className="body-large">A real before-and-after from the chair, from bulk removal and fade work to crisp edging, razor detail, and the finished style.</p>
             <div className="work-points"><span><Check size={14} /> Clippers to scissors</span><span><Check size={14} /> Straight-razor finish</span><span><Check size={14} /> Styled for the reveal</span></div>
           </div>
-          <div className="work-video-frame">
-            <video className="work-video" autoPlay muted loop playsInline controls preload="metadata" poster={HERO} aria-label="Haircut transformation showing the barber's process and finished cut">
-              <source src={TRANSFORMATION} type="video/mp4" />
-              Your browser does not support video playback.
-            </video>
-            <div className="work-video-label"><span>REAL WORK</span><span>28 SEC · SOUND OFF</span></div>
+          <div className="work-video-grid">
+            <div className="work-video-frame">
+              <video className="work-video" autoPlay muted loop playsInline controls preload="metadata" poster={HERO} aria-label="Haircut transformation showing the barber's process and finished cut">
+                <source src={TRANSFORMATION} type="video/mp4" />
+                Your browser does not support video playback.
+              </video>
+              <div className="work-video-label"><span>REAL WORK</span><span>28 SEC</span></div>
+            </div>
+            <div className="work-video-frame work-video-frame-alt">
+              <video className="work-video" autoPlay muted loop playsInline controls preload="metadata" poster={HERO} aria-label="Clean drop fade haircut reveal">
+                <source src={DROP_FADE} type="video/mp4" />
+                Your browser does not support video playback.
+              </video>
+              <div className="work-video-label"><span>DROP FADE</span><span>10 SEC</span></div>
+            </div>
           </div>
         </section>
 
