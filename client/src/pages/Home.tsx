@@ -22,6 +22,7 @@ const CHAIR = "/manus-storage/omar-chair-detail_95da7558.png";
 const WINDOW = "/manus-storage/omar-window-light_2a86ce32.png";
 const TRANSFORMATION = "/manus-storage/CrazyTransformation.......#fyp#foryou#foryoupage#explore#houston#houstonbarber#barber#ba_76769eeb.mp4";
 const DROP_FADE = "/manus-storage/CleanDropFade......#barber#explore#explorepage#fade#dropfade#houstonbarber#fades#haircu_625b2ec8.mp4";
+const HERO_VIDEO = "/manus-storage/Barber_preparing_client_for_haircut_202609020404_4ceb0ca9.mp4";
 
 const mapsUrl = "https://www.google.com/maps/dir/?api=1&destination=7710+Bellaire+Blvd+%23+I,+Houston,+TX+77036";
 const phone = "+17134808254";
@@ -77,7 +78,9 @@ export default function Home() {
 
       <main id="top">
         <section className="hero" aria-labelledby="hero-title">
-          <img className="hero-image" src={HERO} alt="Barber shaping a client's beard in a warm, dark barbershop" />
+          <video className="hero-image hero-video" autoPlay muted loop playsInline preload="metadata" poster={HERO} aria-label="Barber preparing a client for a haircut in a warm, dark barbershop">
+            <source src={HERO_VIDEO} type="video/mp4" />
+          </video>
           <div className="hero-scrim" />
           <div className="hero-grain" />
           <div className="hero-content">
